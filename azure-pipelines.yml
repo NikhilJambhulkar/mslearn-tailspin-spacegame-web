@@ -45,6 +45,8 @@ stages:
         inputs:
           command: 'restore'
           projects: '**/*.csproj'
+          feedsToUse: 'select'
+          vstsFeed: '5636d89c-692d-4550-879f-d622d472ed52/62055484-dbc3-4846-b4dd-bfa016fd61f2'
   
       - task: DotNetCoreCLI@2
         displayName: 'Build the project - $(buildConfiguration)'
